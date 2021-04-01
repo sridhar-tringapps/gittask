@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+    <script src="js/eye.js"></script>
+  </head>
+  <body>
+    <body class="bg-primary">
+      <div class="container">
+          <div class="row justify-content-center">    
+              <div class="col-lg-5">
+                  <div class="card shadow-lg border-0 rounded-lg mt-5">
+                      <div class="card-header bg-secondary">
+                          <h3 class="font-weight-bolder text-center text-white my-4">Login</h3>
+                      </div>
+                      <div class="card-body">
+                          <form class="needs-validation" novalidate>
+                              <div class="form-group">
+                                  <label for="email" class="small">Email<font color="red"> *</font></label>
+                                  <input type="email" id="email" name="email" placeholder="Enter your Email address" class="form-control py-4" required>
+                                  <div class='validationmail small' style='color:red; display: none;'>Please enter email address</div>
+                              </div>
+                              <div class="form-group">
+                                  <label for="password" class="small">Password<font color="red"> *</font></font></label>
+                                  <div class="input-group">
+                                  <input type="password" id="password" name="password" placeholder="Enter Password" class="form-control py-4 " required>
+                                  <div class="input-group-append">
+                                      <div class="input-group-text">
+                                          <i class="far fa-eye-slash" id="eye"></i>
+                                      </div>
+                                  </div>
+                                  </div>
+                                  <div class='validationpass small' style='color:red; display: none;'>Minimum 8 characters, at least one letter and one number</div>
+                              </div>
+                              <div class="form-group">
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" id="remember-password">
+                                      <label class="form-check-label" for="remember-password">Remember Password</label>
+                                  </div>
+                              </div>
+                              <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
+                                  <a class="small text-info" href="forgot-password.html">Forgot Password</a>
+                                  <button type="button" id="button" onclick="valimail()" class="btn btn-secondary float-right">Login</button>
+                              </div>
+                          </form>
+                      </div>
+                      <div class="card-footer bg-secondary text-center">
+                          <a class="small text-white" href="new user.html">Need an account? Signup!</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </body>
+</html>
